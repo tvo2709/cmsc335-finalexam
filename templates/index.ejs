@@ -1,0 +1,57 @@
+<!-- DO NOT MODIFY THIS FILE -->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>FinalExam</title>
+    <link ref="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+
+</head>
+
+<style>
+
+    h1, form {
+        text-align: center;
+        font-family: "Trirong", serif;
+        background-color: #ECDEB9;
+        color: #AD242C;
+    }
+
+    form {
+        border-style: ridge;
+        border-width: 5px;
+        border-color: #226F61;
+        margin-bottom: 10px;
+    }
+
+    img {
+        text-align: center;
+    }
+
+    .button {
+        font-family: "Trirong", serif;
+        margin: 10px;
+        padding: 5px;
+        color: #226F61;
+    } 
+</style>
+
+
+<body>
+
+    <h1>Holidays Restaurant Finder</h1>
+
+	<form action="/processRestaurants" method="POST">
+        Enter your address: <input type="text" name="address"><br>
+        Search Limit: <input type="number" name="quantity" value="10"><br>
+        <input type="submit" class="button" value="Find Restaurant">
+    </form>
+    <form action="/viewList" method="POST">
+        <input type="submit" class="button" value="View Your List">
+    </form>
+
+</body>
+
+</html>

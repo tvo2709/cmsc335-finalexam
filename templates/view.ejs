@@ -1,0 +1,52 @@
+<!-- DO NOT MODIFY THIS FILE -->
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>FinalExam</title>
+        <link ref="stylesheet" href="style.css">
+        
+    </head>
+
+    <style>
+        h1, form {
+            text-align: center;
+            font-family: "Trirong", serif;
+            background-color: #ECDEB9;
+            color: #AD242C;
+        }
+        p {
+            font-family: "Trirong", serif;
+            text-align: center;
+            border-style: dotted;
+            border-width: 7px;
+            border-color: #226F61;
+            background-color: #ECDEB9;
+            color: #AD242C;
+        }
+
+        .button {
+            font-family: "Trirong", serif;
+            padding: 5px;
+            color: #226F61;
+        } 
+    </style>
+
+
+    <body>
+        <h1>Your List</h1>
+        <%- list %>       
+        <form action="/" method="GET">
+            <input type="submit" class="button" value="HOME">
+        </form>
+        <form action="/removeAll" method="POST">
+            <input type="submit" class="button" value="Remove All">
+        </form>
+    </body>
+
+    <script>
+        
+    </script>
+
+</html>

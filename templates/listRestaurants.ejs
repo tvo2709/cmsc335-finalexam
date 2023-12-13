@@ -1,0 +1,72 @@
+<!-- DO NOT MODIFY THIS FILE -->
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>FinalExam</title>
+        <link ref="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    </head>
+
+    <style>
+
+        h1, form {
+            text-align: center;
+            font-family: "Trirong", serif;
+            background-color: #ECDEB9;
+            color: #AD242C;
+        }
+
+        p {
+            font-family: "Trirong", serif;
+            text-align: center;
+            border-style: dotted;
+            border-width: 7px;
+            border-color: #226F61;
+            background-color: #ECDEB9;
+            color: #AD242C;
+        }
+    
+        form {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .button {
+            font-family: "Trirong", serif;
+            padding: 5px;
+            color: #226F61;
+        } 
+
+        .textfield {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+            height: 15px;
+            width: 400px;
+            display: block;
+        }
+    </style>
+
+
+    <body>
+        <h1>Here are the restaurants nearby!</h1>
+        <%- names %>
+        <div id="test"></div>
+        <form action="/added" method="POST">
+            Enter name of restaurant you want to add: <input type="text" class="textfield" name="restName">
+            <input type="submit" class="button" value="Add this restaurant">
+        </form>
+           
+        <form action="/" method="GET">
+            <input type="submit" class="button" value="HOME">
+        </form>
+    </body>
+
+    <script>
+        
+    </script>
+
+</html>
